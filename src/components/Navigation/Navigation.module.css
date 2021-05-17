@@ -1,0 +1,103 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background: url("./background-header.PNG");
+    display: flex;
+    position: fixed;
+}
+
+.header img {
+    height: 100px;
+    margin-right: 30px;
+}
+
+.header img:hover {
+    cursor: pointer;
+}
+
+.navigationList {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navigationList .mainNavi{
+    color: rgb(216, 214, 214);
+    margin-right: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+
+.navigationList .mainNavi .mainList:hover,
+.subList li:hover {
+    cursor: pointer;
+    color: brown;
+    transition-duration: 0.5s;
+}
+
+
+.createSubNavi {
+    width: 100%;
+    height: 0;
+    display: none;
+    top: 100px;
+    border-top: 1px solid rgba(134, 134, 134, 0.685);
+    background: url("./background-header.PNG");
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(216, 214, 214);
+    text-shadow: 3px 3px 3px rgb(24, 24, 24);
+}
+
+.showSubNavi {
+    display: block;
+    height: 200px;
+    transition-duration: 1s;
+}
+
+.subNaviTitle {
+    width: 259px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid rgba(134, 134, 134, 0.685);
+    padding-top: 25px;
+    padding-right: 25px;
+    text-align: end;
+}
+
+.subList {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: 259px;
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.subList li {
+    margin: 8px;
+    margin-left: 20px;
+}
+
+.memberAnnouncement {
+    display: flex;
+    align-items: center;
+}
+
+
