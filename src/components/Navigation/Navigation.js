@@ -61,7 +61,7 @@ const menuList = [
     }
 ]
 
-const CreateToggle = ({object, name}) => {
+const CreateToggle = ({ object, name }) => {
     return (
         <div className={`${styles.createSubNavi} ${styles.showSubNavi}`}>
             <div className={styles.subNaviTitle}>{name}</div>
@@ -84,27 +84,29 @@ export default function Navigation() {
     return (
         <div className={styles.header}>
             <Link to="/#"><img src={logo} alt={logo} /></Link>
-            <ul className={styles.navigationList}>
-                {menuList.map(element => {
-                    return (
-                        <li onClick={toggleNavi} key={element.id} className={styles.mainNavi}>
-                            <span className={styles.mainList}> {Object.keys(element)[0]} </span>
-                        </li>
-                    )
-                })} 
-            </ul>
-            <div className={styles.createSubNavi}></div>
-            {isOpen && typeof clickedItem[0] === "object" && <CreateToggle object={clickedItem[0]} name={clickedItem[1]} />}
-            <div className={styles.memberAnnouncement}>
-                <span className={styles.member}>
-                    <Link to={"/logIn"}>로그인</Link>
-                    <Link to={"/signUp"}>회원가입</Link>
-                </span>
-                <span className={styles.service}>
-                    <Link to={"/customerService"}><span>고객센터</span></Link>
-                    <Link to={"/announcement"}><span>뉴스및공지</span></Link>
-                </span>
+            <div className={styles.flex_box}>
+                <ul className={styles.navigationList}>
+                    {menuList.map(element => {
+                        return (
+                            <li onClick={toggleNavi} key={element.id} className={styles.mainNavi}>
+                                <span className={styles.mainList}> {Object.keys(element)[0]} </span>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
+                <div className={styles.createSubNavi}></div>
+                {isOpen && typeof clickedItem[0] === "object" && <CreateToggle object={clickedItem[0]} name={clickedItem[1]} />}
+                <div className={styles.memberAnnouncement}>
+                    <span className={styles.member}>
+                        <Link to={"/logIn"}>로그인</Link>|
+                        <Link to={"/signUp"}>회원가입</Link>
+                    </span>
+                    <span className={styles.service}>
+                        <Link to={"/customerService"}><span>고객센터</span></Link>|
+                        <Link to={"/announcement"}><span>뉴스및공지</span></Link>
+                    </span>
+                </div>
         </div >
     );
 }
