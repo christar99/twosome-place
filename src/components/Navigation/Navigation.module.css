@@ -10,6 +10,8 @@
     background: url("./background-header.PNG");
     display: flex;
     position: fixed;
+    border-bottom: 1px solid rgba(134, 134, 134, 0.685);
+    z-index: 999;
 }
 
 .header .flex_box {
@@ -68,6 +70,7 @@
     font-weight: 500;
     color: rgb(216, 214, 214);
     text-shadow: 3px 3px 3px rgb(24, 24, 24);
+    border-bottom: 1px solid rgba(134, 134, 134, 0.685);
 }
 
 .showSubNavi {
@@ -104,7 +107,7 @@
 
 .memberAnnouncement {
     margin-right: 50px;
-    width: 200px;
+    width: 230px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,6 +124,12 @@
     text-decoration: none;
     color: rgba(228, 228, 228, 0.664);
     margin: 5px;
+}
+
+@media (max-width: 1460px) {
+    .memberAnnouncement{
+        display: none;
+    }
 }
 
 

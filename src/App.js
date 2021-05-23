@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
-import Main from './routes/Main.js';
+import Main from './routes/Main/Main.js';
 
 
 
