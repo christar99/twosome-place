@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 .events {
   width: 100%;
-  height: 100%;
+  height: 90%;
   padding: 30px 70px 0 70px;
+  scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,8 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background: url("../image/event_background-img.jpg") no-repeat center;
-  background-size: cover;
+  background-color: rgba(243, 212, 174, 0.952);
 }
 
 .events .events_subject {

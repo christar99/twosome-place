@@ -1,7 +1,31 @@
 .fullPage {
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.fullPage .fullPage .main__1, .fullPage .main__2, .fullPage .main__3, .fullPage .main__4 {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+}
+
+.fullPage .main__1 {
+  background-color: blue;
+}
+
+.fullPage .main__2 {
+  background-color: orange;
+}
+
+.fullPage .main__3 {
+  background-color: lightgreen;
+}
+
+.fullPage .main__4 {
+  background-color: brown;
 }
 
 .fullPage::-webkit-scrollbar {

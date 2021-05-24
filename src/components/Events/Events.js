@@ -3,24 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './css/events.module.css';
 import 'swiper/swiper-bundle.css';
 
-const twosome_event = [
-    {
-        id: "event1",
-        src: "./image/twosome_event1.jpg"
-    },
-    {
-        id: "event2",
-        src: "./image/twosome_event2.jpg"
-    },
-    {
-        id: "event3",
-        src: "./image/twosome_event3.jpg"
-    },
-    {
-        id: "event4",
-        src: "./image/twosome_event4.jpg"
-    }
-];
 
 const Events = () => {
     return (
@@ -28,7 +10,7 @@ const Events = () => {
             <span className={styles.events_subject}>EVENT</span>
             <Swiper
                 className={styles.banner}
-                spaceBetween={10}
+                // spaceBetween={10}
                 slidesPerView={3}
                 loop={true}
                 navigation

@@ -99,7 +99,7 @@ export default function Navigation() {
                 {isOpen && typeof clickedItem[0] === "object" && <CreateToggle object={clickedItem[0]} name={clickedItem[1]} />}
                 <div className={styles.memberAnnouncement}>
                     <span className={styles.member}>
-                        <Link to={"/logIn"}>로그인</Link>|
+                        <Link to={"/login"}>로그인</Link>|
                         <Link to={"/signUp"}>회원가입</Link>
                     </span>
                     <span className={styles.service}>
